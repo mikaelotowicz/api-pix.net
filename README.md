@@ -183,8 +183,8 @@ Biblioteca para geração de QR Code dinâmico do PIX (Sistema de pagamento inst
         {
             ["inicio"] = "2020-04-01T00:00:00Z",
             ["fim"] = "2020-04-01T23:59:59Z",
-            ["paginaAtual"] = "0",
-            ["itensPorPagina"] = "100"
+            ["paginacao.paginaAtual"] = "0",
+            ["paginacao.itensPorPagina"] = "100"
         });
 ```
 * Deletar Webhook
