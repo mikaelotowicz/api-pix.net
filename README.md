@@ -18,8 +18,8 @@ Biblioteca para geração de QR Code dinâmico do PIX (Sistema de pagamento inst
             CidadeMerchant = "Cidade Comerciante",
             ClientId = "Cliente Id",
             ClientSecret = "Cliente Secret",
-            UrlAuth = "https://pix.santander.com.br/sandbox/oauth/token",
-            UrlPix = "https://pix.santander.com.br/api/v1/sandbox",
+            UrlAuth = "https://pix.exemple.com.br/sandbox/oauth/token",
+            UrlPix = "https://pix.exemple.com.br/api/v1/sandbox",
             Certificate = new X509Certificate2(@"C:\Certificados\Certificado.cer"),
             ParametersAuth = new Dictionary<string, string>
             {
