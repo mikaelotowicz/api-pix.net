@@ -12,8 +12,6 @@ Biblioteca para geração de QR Code dinâmico do PIX (Sistema de pagamento inst
 
         var PSP = new ConfigPSP
         {
-            PSP = EPSP.Santander,
-            ChavePix = "Chave pix",
             NomeMerchant = "Nome Comerciante",
             CidadeMerchant = "Cidade Comerciante",
             ClientId = "Cliente Id",
@@ -190,5 +188,16 @@ Biblioteca para geração de QR Code dinâmico do PIX (Sistema de pagamento inst
 * Deletar Webhook
 ```C#
         var retorno = await rest.WebhookDeleteAsync("7932ef9c-f0bc-4e41-ad4f-0866102b519f");
+```
+# QR Code
+* String para Gerar o QR Code de Pagamento
+```C#
+        var strQrCode = PayloadService.StringQrCode(
+            new DynamicPayload(
+                _txId: "000000000000000000100", 
+                _merchantName: "Empresa Modelo", 
+                _merchantCity: "Erechim", 
+                _urlPix: "pix.example.com/qr/v2/9d36b84fc70b478fb95c12729b90ca25", 
+                _amount: "10.00"));
 ```
 
