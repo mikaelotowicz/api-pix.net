@@ -5,6 +5,7 @@ Biblioteca para geração de QR Code dinâmico do PIX (Sistema de pagamento inst
 
 * A implementação desta biblioteca tem como objetivo auxiliar na geração de QR Codes dinâmicos do Pix. O conjunto de funções disponibilizadas por essa biblioteca devem ser verificadas junto a documentação do PSP, já que alguns PSPs não implementaram algumas funções que está biblioteca contempla.
 
+* Grupo no Telegram => https://t.me/r2jpleZFHkc1NTBh
 
 # Iniciando
   * As configurações podem variar de PSP para PSP, é necessário verificar a documentação do PSP utilizado.
