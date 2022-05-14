@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net5.0;net6.0</TargetFrameworks>
+    <RootNamespace>api_pix_net</RootNamespace>
+    <Authors>Micael Otowicz</Authors>
+    <Description>Biblioteca para geração de QRCode dinâmico PIX - Sistema de pagamento instantâneo do Banco Central do Brasil.</Description>
+    <PackageProjectUrl>https://github.com/mikaelotowicz/api-pix.net</PackageProjectUrl>
+    <PackageIcon>pix-img.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/mikaelotowicz/api-pix.net</RepositoryUrl>
+    <AssemblyVersion>2022.05.14.1500</AssemblyVersion>
+    <FileVersion>2022.05.14.1500</FileVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>Micael Otowicz</Company>
+    <Version>1.0.3</Version>
+    <PackageTags>api,pix,brasil,brazil,qrcode,pagamento,bacen</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Contract\" />
+    <Folder Include="Enum\" />
+    <Folder Include="Models\Auth\" />
+    <Folder Include="Models\Base\" />
+    <Folder Include="Models\Cobranca\Base\" />
+    <Folder Include="Models\Cob\" />
+    <Folder Include="Models\CobV\" />
+    <Folder Include="Models\Webhook\" />
+    <Folder Include="Models\Response\" />
+    <Folder Include="Models\Pix\" />
+    <Folder Include="Payload\Models\Base\" />
+    <Folder Include="Services\Base\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RestSharp" Version="107.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pix-img.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
